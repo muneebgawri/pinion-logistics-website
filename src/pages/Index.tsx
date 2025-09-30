@@ -541,10 +541,10 @@ const Index = () => {
                         <div>
                           <div className="font-bold text-foreground mb-1">Phone</div>
                           <a
-                            href="tel:+15551234567"
+                            href="tel:+19793151024"
                             className="text-muted-foreground hover:text-accent transition-colors"
                           >
-                            (555) 123-4567
+                            979-315-1024
                           </a>
                         </div>
                       </div>
@@ -554,10 +554,10 @@ const Index = () => {
                         <div>
                           <div className="font-bold text-foreground mb-1">Email</div>
                           <a
-                            href="mailto:info@atoblogistics.com"
+                            href="mailto:office@atoblogistics.co"
                             className="text-muted-foreground hover:text-accent transition-colors"
                           >
-                            info@atoblogistics.com
+                            office@atoblogistics.co
                           </a>
                         </div>
                       </div>
@@ -579,9 +579,7 @@ const Index = () => {
                         <div>
                           <div className="font-bold text-foreground mb-1">Business Hours</div>
                           <div className="text-muted-foreground">
-                            Monday - Friday: 7:00 AM - 7:00 PM
-                            <br />
-                            Saturday: 8:00 AM - 5:00 PM
+                            Monday - Sunday: 7:00 AM - 7:00 PM
                             <br />
                             24/7 Emergency Service Available
                           </div>
@@ -694,7 +692,7 @@ const Index = () => {
               </div>
               <p className="text-sm text-primary-foreground/80">
                 <Phone className="inline h-4 w-4 mr-2" />
-                (555) 123-4567
+                979-315-1024
               </p>
             </div>
           </div>
