@@ -21,7 +21,9 @@ import {
   Menu,
   X,
 } from "lucide-react";
+import { toast } from "sonner";
 import heroImage from "@/assets/hero-trucks.jpg";
+import wheelWagonIcon from "@/assets/wheel-wagon.svg";
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -34,13 +36,36 @@ const Index = () => {
     }
   };
 
+  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    
+    const name = formData.get("name") as string;
+    const email = formData.get("email") as string;
+    const phone = formData.get("phone") as string;
+    const origin = formData.get("origin") as string;
+    const destination = formData.get("destination") as string;
+    const details = formData.get("details") as string;
+
+    const subject = encodeURIComponent(`Quote Request from ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nOrigin: ${origin}\nDestination: ${destination}\n\nLoad Details:\n${details}`
+    );
+
+    window.location.href = `mailto:office@atoblogistics.co?subject=${subject}&body=${body}`;
+    
+    toast.success("Opening your email client...");
+    form.reset();
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Sticky Navigation */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
         <nav className="container mx-auto flex h-16 items-center justify-between px-4">
           <div className="flex items-center gap-2">
-            <Truck className="h-8 w-8 text-primary" />
+            <img src={wheelWagonIcon} alt="Wheel icon" className="h-8 w-8 text-primary" />
             <span className="text-xl font-bold text-primary">AtoB Logistics</span>
           </div>
 
@@ -455,36 +480,36 @@ const Index = () => {
               <Card className="border-2">
                 <CardContent className="pt-6">
                   <h3 className="text-2xl font-bold mb-6 text-primary">Request a Quote</h3>
-                  <form className="space-y-4">
+                  <form className="space-y-4" onSubmit={handleFormSubmit}>
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium mb-2 text-foreground">
                         Full Name *
                       </label>
-                      <Input id="name" placeholder="John Doe" required />
+                      <Input id="name" name="name" placeholder="John Doe" required />
                     </div>
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium mb-2 text-foreground">
                         Email Address *
                       </label>
-                      <Input id="email" type="email" placeholder="john@company.com" required />
+                      <Input id="email" name="email" type="email" placeholder="john@company.com" required />
                     </div>
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium mb-2 text-foreground">
                         Phone Number *
                       </label>
-                      <Input id="phone" type="tel" placeholder="(555) 123-4567" required />
+                      <Input id="phone" name="phone" type="tel" placeholder="(555) 123-4567" required />
                     </div>
                     <div>
                       <label htmlFor="origin" className="block text-sm font-medium mb-2 text-foreground">
                         Origin Location *
                       </label>
-                      <Input id="origin" placeholder="City, State" required />
+                      <Input id="origin" name="origin" placeholder="City, State" required />
                     </div>
                     <div>
                       <label htmlFor="destination" className="block text-sm font-medium mb-2 text-foreground">
                         Destination Location *
                       </label>
-                      <Input id="destination" placeholder="City, State" required />
+                      <Input id="destination" name="destination" placeholder="City, State" required />
                     </div>
                     <div>
                       <label htmlFor="details" className="block text-sm font-medium mb-2 text-foreground">
@@ -492,6 +517,7 @@ const Index = () => {
                       </label>
                       <Textarea
                         id="details"
+                        name="details"
                         placeholder="Describe your freight (weight, dimensions, special requirements, etc.)"
                         rows={4}
                         required
@@ -541,9 +567,9 @@ const Index = () => {
                         <div>
                           <div className="font-bold text-foreground mb-1">Headquarters</div>
                           <div className="text-muted-foreground">
-                            1234 Logistics Drive
+                            7901 4TH ST N STE 300
                             <br />
-                            Dallas, TX 75201
+                            St. Petersburg, FL 33702
                           </div>
                         </div>
                       </div>
@@ -565,16 +591,19 @@ const Index = () => {
                   </CardContent>
                 </Card>
 
-                {/* Map Placeholder */}
+                {/* Map Embed */}
                 <Card className="border-2">
                   <CardContent className="p-0">
-                    <div className="w-full h-64 bg-muted flex items-center justify-center">
-                      <div className="text-center text-muted-foreground">
-                        <MapPin className="h-12 w-12 mx-auto mb-2" />
-                        <div className="font-medium">Map Location</div>
-                        <div className="text-sm">(Google Maps embed)</div>
-                      </div>
-                    </div>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3526.5875!2d-82.6773!3d27.7766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e1e4c4c4c4c5%3A0x1234567890abcdef!2s7901%204th%20St%20N%20STE%20300%2C%20St%20Petersburg%2C%20FL%2033702!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                      width="100%"
+                      height="256"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="AtoB Logistics Office Location"
+                    />
                   </CardContent>
                 </Card>
               </div>
@@ -589,7 +618,7 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Truck className="h-8 w-8" />
+                <img src={wheelWagonIcon} alt="Wheel icon" className="h-8 w-8 invert" />
                 <span className="text-xl font-bold">AtoB Logistics</span>
               </div>
               <p className="text-primary-foreground/80 text-sm">
