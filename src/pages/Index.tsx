@@ -181,17 +181,17 @@ const Index = () => {
         {/* Hero Content */}
         <div className="container relative z-10 mx-auto px-4 text-center text-primary-foreground">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            Your Freight, Our Priority
+            Maximize Your Earnings, Minimize Your Risk
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-primary-foreground/90">
-            Reliable, on-time logistics solutions tailored to your business.
+            Professional dispatching services that keep you moving forward with transparent, flexible, and reliable solutions.
           </p>
           <Button
             size="lg"
             onClick={() => scrollToSection("contact")}
             className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 shadow-elegant"
           >
-            Request a Quote <ArrowRight className="ml-2 h-5 w-5" />
+            Get Started Today <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
       </section>
@@ -202,12 +202,12 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">About AtoB Logistics</h2>
             <p className="text-lg text-muted-foreground mb-6">
-              AtoB Logistics specializes in expedited freight, FTL/LTL, and specialized delivery solutions.
-              We're committed to reliability, transparency, and customer-first service that keeps your business moving.
+              AtoB Logistics specializes in professional dispatching services that maximize your earnings while minimizing risk.
+              We're committed to transparency, flexibility, and reliability that keeps your operations moving forward.
             </p>
             <p className="text-lg text-muted-foreground">
-              Our mission is simple: deliver your cargo safely, on time, every time. With a focus on innovation
-              and customer satisfaction, we've built a reputation as a trusted logistics partner.
+              Our mission is simple: provide you with consistent, high-paying loads while handling all the paperwork and administrative details.
+              With our integrated approach to Sales, Operations, and Finance, we ensure every load contributes directly to your success.
             </p>
           </div>
 
@@ -242,59 +242,20 @@ const Index = () => {
       <section id="services" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">Our Services</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive logistics solutions designed to meet your unique shipping needs.
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">Dispatching Services</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              We've got you covered. Our dispatching solutions are designed to maximize your earnings while minimizing risk. 
+              We provide transparent, flexible, and reliable services that keep you moving forward without hidden costs or forced commitments.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="hover:shadow-elegant transition-shadow border-2 hover:border-primary">
               <CardContent className="pt-8 pb-6">
-                <Zap className="h-12 w-12 mb-4 text-accent" />
-                <h3 className="text-xl font-bold mb-3 text-primary">Expedited / Hotshot Freight</h3>
+                <TrendingUp className="h-12 w-12 mb-4 text-accent" />
+                <h3 className="text-xl font-bold mb-3 text-primary">3–5 High-Paying Loads Every Week</h3>
                 <p className="text-muted-foreground">
-                  Time-sensitive deliveries with guaranteed express service for urgent shipments.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-elegant transition-shadow border-2 hover:border-primary">
-              <CardContent className="pt-8 pb-6">
-                <Truck className="h-12 w-12 mb-4 text-accent" />
-                <h3 className="text-xl font-bold mb-3 text-primary">Full Truckload (FTL)</h3>
-                <p className="text-muted-foreground">
-                  Dedicated truck capacity for large shipments with direct point-to-point delivery.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-elegant transition-shadow border-2 hover:border-primary">
-              <CardContent className="pt-8 pb-6">
-                <Package className="h-12 w-12 mb-4 text-accent" />
-                <h3 className="text-xl font-bold mb-3 text-primary">Less-than-Truckload (LTL)</h3>
-                <p className="text-muted-foreground">
-                  Cost-effective solutions for smaller shipments sharing truck space with other cargo.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-elegant transition-shadow border-2 hover:border-primary">
-              <CardContent className="pt-8 pb-6">
-                <Shield className="h-12 w-12 mb-4 text-accent" />
-                <h3 className="text-xl font-bold mb-3 text-primary">White Glove / Residential Delivery</h3>
-                <p className="text-muted-foreground">
-                  Premium handling with inside delivery, unpacking, and debris removal services.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-elegant transition-shadow border-2 hover:border-primary">
-              <CardContent className="pt-8 pb-6">
-                <Target className="h-12 w-12 mb-4 text-accent" />
-                <h3 className="text-xl font-bold mb-3 text-primary">Specialized Transport</h3>
-                <p className="text-muted-foreground">
-                  Custom solutions for oversized, fragile, or specialty cargo requiring expert handling.
+                  Consistent access to profitable freight opportunities that maximize your earning potential.
                 </p>
               </CardContent>
             </Card>
@@ -302,9 +263,79 @@ const Index = () => {
             <Card className="hover:shadow-elegant transition-shadow border-2 hover:border-primary">
               <CardContent className="pt-8 pb-6">
                 <CheckCircle2 className="h-12 w-12 mb-4 text-accent" />
-                <h3 className="text-xl font-bold mb-3 text-primary">Medical Transport</h3>
+                <h3 className="text-xl font-bold mb-3 text-primary">No Flat Fees</h3>
                 <p className="text-muted-foreground">
-                  Temperature-controlled and secure transport for medical equipment and supplies.
+                  Pay only a fair percentage, no hidden charges or upfront costs to worry about.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-elegant transition-shadow border-2 hover:border-primary">
+              <CardContent className="pt-8 pb-6">
+                <Shield className="h-12 w-12 mb-4 text-accent" />
+                <h3 className="text-xl font-bold mb-3 text-primary">Zero Risk</h3>
+                <p className="text-muted-foreground">
+                  No upfront investment or financial risk. Start earning without any initial capital requirements.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-elegant transition-shadow border-2 hover:border-primary">
+              <CardContent className="pt-8 pb-6">
+                <Clock className="h-12 w-12 mb-4 text-accent" />
+                <h3 className="text-xl font-bold mb-3 text-primary">24/7 Support</h3>
+                <p className="text-muted-foreground">
+                  Round-the-clock assistance to keep your operations running smoothly, whenever you need help.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-elegant transition-shadow border-2 hover:border-primary">
+              <CardContent className="pt-8 pb-6">
+                <Target className="h-12 w-12 mb-4 text-accent" />
+                <h3 className="text-xl font-bold mb-3 text-primary">Net 7 Payment Terms</h3>
+                <p className="text-muted-foreground">
+                  Quick, predictable payment cycles that keep your cash flow steady and reliable.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-elegant transition-shadow border-2 hover:border-primary">
+              <CardContent className="pt-8 pb-6">
+                <Package className="h-12 w-12 mb-4 text-accent" />
+                <h3 className="text-xl font-bold mb-3 text-primary">Full Paperwork Handling</h3>
+                <p className="text-muted-foreground">
+                  From load booking to payment processing, we take care of all the administrative details.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-elegant transition-shadow border-2 hover:border-primary">
+              <CardContent className="pt-8 pb-6">
+                <Users className="h-12 w-12 mb-4 text-accent" />
+                <h3 className="text-xl font-bold mb-3 text-primary">No Forced Dispatching</h3>
+                <p className="text-muted-foreground">
+                  You're always in control of which loads you accept. No pressure, no obligations.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-elegant transition-shadow border-2 hover:border-primary">
+              <CardContent className="pt-8 pb-6">
+                <Zap className="h-12 w-12 mb-4 text-accent" />
+                <h3 className="text-xl font-bold mb-3 text-primary">No Contract Lock-In</h3>
+                <p className="text-muted-foreground">
+                  Work with us flexibly, without long-term binding commitments or restrictive agreements.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-elegant transition-shadow border-2 hover:border-primary">
+              <CardContent className="pt-8 pb-6">
+                <Truck className="h-12 w-12 mb-4 text-accent" />
+                <h3 className="text-xl font-bold mb-3 text-primary">Integrated Approach</h3>
+                <p className="text-muted-foreground">
+                  We integrate Sales, Operations, and Finance seamlessly to ensure every load contributes to your success.
                 </p>
               </CardContent>
             </Card>
@@ -433,7 +464,7 @@ const Index = () => {
           </div>
 
           {/* Partner Logos Placeholder */}
-          <div className="mt-16 text-center">
+          {/* <div className="mt-16 text-center">
             <h3 className="text-2xl font-bold mb-8 text-primary">Trusted by Industry Leaders</h3>
             <div className="flex flex-wrap justify-center items-center gap-12 opacity-60">
               <div className="text-4xl font-bold text-muted-foreground">PARTNER 1</div>
@@ -441,7 +472,7 @@ const Index = () => {
               <div className="text-4xl font-bold text-muted-foreground">PARTNER 3</div>
               <div className="text-4xl font-bold text-muted-foreground">PARTNER 4</div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -657,11 +688,11 @@ const Index = () => {
             <div>
               <h4 className="font-bold mb-4">Services</h4>
               <div className="space-y-2 text-sm text-primary-foreground/80">
-                <div>Expedited Freight</div>
-                <div>Full Truckload (FTL)</div>
-                <div>Less-than-Truckload (LTL)</div>
-                <div>White Glove Delivery</div>
-                <div>Medical Transport</div>
+                <div>Dispatching Services</div>
+                <div>High-Paying Loads</div>
+                <div>24/7 Support</div>
+                <div>Paperwork Handling</div>
+                <div>Net 7 Payments</div>
               </div>
             </div>
 
