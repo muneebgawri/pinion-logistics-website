@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 import heroImage from "@/assets/hero-trucks.jpg";
-import wheelWagonIcon from "@/assets/wheel-wagon.svg";
+import pinionLogisticsLogo from "@/assets/pinion-logistics.svg";
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -65,8 +65,8 @@ const Index = () => {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
         <nav className="container mx-auto flex h-16 items-center justify-between px-4">
           <div className="flex items-center gap-2">
-            <img src={wheelWagonIcon} alt="Wheel icon" className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-primary">AtoB Logistics</span>
+            <img src={pinionLogisticsLogo} alt="Pinion Logistics logo" className="h-8 text-primary" />
+            <span className="text-xl font-bold text-primary">Pinion Logistics</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -200,9 +200,9 @@ const Index = () => {
       <section id="about" className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">About AtoB Logistics</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">About Pinion Logistics</h2>
             <p className="text-lg text-muted-foreground mb-6">
-              AtoB Logistics specializes in professional dispatching services that maximize your earnings while minimizing risk.
+              Pinion Logistics specializes in professional dispatching services that maximize your earnings while minimizing risk.
               We're committed to transparency, flexibility, and reliability that keeps your operations moving forward.
             </p>
             <p className="text-lg text-muted-foreground">
@@ -347,7 +347,7 @@ const Index = () => {
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">Why Choose AtoB?</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">Why Choose Pinion?</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               We go beyond basic freight services to deliver exceptional value and peace of mind.
             </p>
@@ -416,7 +416,7 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4 italic">
-                  "AtoB Logistics has been our go-to freight partner for 3 years. Their reliability and
+                  "Pinion Logistics has been our go-to freight partner for 3 years. Their reliability and
                   communication are unmatched. Highly recommended!"
                 </p>
                 <div>
@@ -434,7 +434,7 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4 italic">
-                  "When we needed expedited delivery across the country, AtoB came through flawlessly.
+                  "When we needed expedited delivery across the country, Pinion came through flawlessly.
                   Professional, fast, and affordable."
                 </p>
                 <div>
@@ -452,7 +452,7 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4 italic">
-                  "Outstanding service from start to finish. AtoB handled our specialized equipment with
+                  "Outstanding service from start to finish. Pinion handled our specialized equipment with
                   care and professionalism. Will use again!"
                 </p>
                 <div>
@@ -483,7 +483,7 @@ const Index = () => {
             Get Your Cargo Delivered On Time, Every Time.
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Join hundreds of satisfied clients who trust AtoB Logistics for their freight needs.
+            Join hundreds of satisfied clients who trust Pinion Logistics for their freight needs.
           </p>
           <Button
             size="lg"
@@ -631,7 +631,7 @@ const Index = () => {
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="AtoB Logistics Office Location"
+                      title="Pinion Logistics Office Location"
                     />
                   </CardContent>
                 </Card>
@@ -647,8 +647,8 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <img src={wheelWagonIcon} alt="Wheel icon" className="h-8 w-8 invert" />
-                <span className="text-xl font-bold">AtoB Logistics</span>
+                <img src={pinionLogisticsLogo} alt="Pinion Logistics logo" className="h-8 invert" />
+                <span className="text-xl font-bold">Pinion Logistics</span>
               </div>
               <p className="text-primary-foreground/80 text-sm">
                 Your trusted partner for reliable freight and logistics solutions nationwide.
@@ -729,7 +729,7 @@ const Index = () => {
           </div>
 
           <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/80">
-            <p>&copy; 2025 AtoB Logistics. All rights reserved.</p>
+            <p>&copy; 2025 Pinion Logistics. All rights reserved.</p>
           </div>
         </div>
       </footer>
