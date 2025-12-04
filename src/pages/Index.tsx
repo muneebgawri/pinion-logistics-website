@@ -24,6 +24,7 @@ import {
 import { toast } from "sonner";
 import heroImage from "@/assets/hero-trucks.jpg";
 import pinionLogisticsLogo from "@/assets/pinion-logistics.svg";
+import pinionLogisticsFooterLogo from "@/assets/pinion-logistics-footer.svg";
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -66,7 +67,6 @@ const Index = () => {
         <nav className="container mx-auto flex h-16 items-center justify-between px-4">
           <div className="flex items-center gap-2">
             <img src={pinionLogisticsLogo} alt="Pinion Logistics logo" className="h-8 text-primary" />
-            <span className="text-xl font-bold text-primary">Pinion Logistics</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -647,8 +647,7 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <img src={pinionLogisticsLogo} alt="Pinion Logistics logo" className="h-8 invert" />
-                <span className="text-xl font-bold">Pinion Logistics</span>
+                <img src={pinionLogisticsFooterLogo} alt="Pinion Logistics logo" className="h-8" />
               </div>
               <p className="text-primary-foreground/80 text-sm">
                 Your trusted partner for reliable freight and logistics solutions nationwide.
